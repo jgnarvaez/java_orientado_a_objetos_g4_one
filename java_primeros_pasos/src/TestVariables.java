@@ -24,6 +24,18 @@ public class TestVariables {
         double total = valor1 + valor2;
 
         System.out.println(total);
+        
+        char letra = 'a';
+        System.out.println(letra);
+
+        valor = (char) (valor + 1);
+        System.out.println(valor);
+
+        String palabra = "Alura cursos online de tecnología";
+        System.out.println(palabra);
+
+        palabra = palabra + 2020;
+        System.out.println(palabra);
 	}
 	
 }
