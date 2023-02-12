@@ -5,19 +5,18 @@ public class Cuenta {
 	double saldo;
     int agencia;
     int numero;
-    String titular;
+    Cliente titular = new Cliente();
 	
     public void deposita(double valor) {
-        this.saldo = this.saldo + valor;
+        this.saldo += valor;
     }
 
     public boolean saca(double valor) {
         if(this.saldo >= valor) {
             this.saldo -= valor;
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     public boolean transfiere(double valor, Cuenta destino) {
