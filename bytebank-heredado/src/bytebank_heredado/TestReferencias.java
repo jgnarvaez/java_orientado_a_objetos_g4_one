@@ -5,7 +5,7 @@ public class TestReferencias {
 	public static void main(String[] args) {
 		
 		// Elemento más genérico puede ser adaptado al elemento más específico
-		Funcionario funcionario = new Funcionario();
+		Funcionario funcionario = new Contador();
 		funcionario.setNombre("Diego");
 		
 		//Gerente gerente = new Funcionario(); Error: no compila

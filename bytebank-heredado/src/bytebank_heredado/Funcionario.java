@@ -1,6 +1,6 @@
 package bytebank_heredado;
 
-public class Funcionario {
+public abstract class Funcionario {
 	
 	private String nombre;
     private String documento;
@@ -39,7 +39,5 @@ public class Funcionario {
         this.tipo = tipo;
     }
 
-    public double getBonificacion() {
-        return this.salario * 0.05;
-    }
+    public abstract double getBonificacion();
 }

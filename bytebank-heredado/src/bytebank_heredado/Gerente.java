@@ -13,9 +13,10 @@ public class Gerente extends Funcionario{
     }
     
     //sobre-escritura de método
+    @Override
     public double getBonificacion() {
     	System.out.println("EJECUTANDO DESDE GERENTE");
-        return super.getBonificacion() + super.getSalario();
+        return super.getSalario() + super.getSalario() * 0.05;
     }
 
     public boolean iniciarSesion(String clave) {
