@@ -2,20 +2,28 @@ package bytebank_heredado;
 
 public class Gerente extends Funcionario{
 	
-	private int contraseña;
+	private String clave;
 
-    public void setContraseña(int contraseña) {
-        this.contraseña = contraseña;
+    public String getClave() {
+        return clave;
     }
 
-    public boolean autenticar(int contraseña) {
-        if (this.contraseña == contraseña) {
-            return true;
-        }
-        return false;
+    public void setClave(String clave) {
+        this.clave = clave;
     }
     
+    //sobre-escritura de método
     public double getBonificacion() {
-    	return super.getBonificacion() + super.getSalario();
+    	System.out.println("EJECUTANDO DESDE GERENTE");
+        return super.getBonificacion() + super.getSalario();
     }
+
+    public boolean iniciarSesion(String clave) {
+        if(this.clave == clave) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
 }

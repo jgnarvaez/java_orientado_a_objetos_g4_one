@@ -3,8 +3,9 @@ package bytebank_heredado;
 public class Funcionario {
 	
 	private String nombre;
-    private String documentoIdentidad;
-    private double salario;
+    private String documento;
+    protected double salario;
+    private int tipo;
 
     public String getNombre() {
         return nombre;
@@ -14,12 +15,12 @@ public class Funcionario {
         this.nombre = nombre;
     }
 
-    public String getDocumentoIdentidad() {
-        return documentoIdentidad;
+    public String getDocumento() {
+        return documento;
     }
 
-    public void setDocumentoIdentidad(String documentoIdentidad) {
-        this.documentoIdentidad = documentoIdentidad;
+    public void setDocumento(String documento) {
+        this.documento = documento;
     }
 
     public double getSalario() {
@@ -29,8 +30,16 @@ public class Funcionario {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-	
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+
     public double getBonificacion() {
-        return this.salario * 0.1;
+        return this.salario * 0.05;
     }
 }

@@ -4,14 +4,14 @@ public class TestFuncionario {
 	
 	public static void main(String[] args) {
 		
-		Funcionario nico = new Funcionario();
-
-        nico.setNombre("Nico Steppat");
-        nico.setDocumentoIdentidad("223355646-9");
-        nico.setSalario(2590.80);
-
-        System.out.println(nico.getNombre());
-        System.out.println(nico.getBonificacion());
+		Funcionario diego = new Funcionario();
+		diego.setDocumento("Diego");
+		diego.setDocumento("444556665");
+		diego.setSalario(2000);
+		diego.setTipo(0);
+		
+		System.out.println(diego.getSalario());
+		System.out.println(diego.getBonificacion());
 		
 	}
 	
