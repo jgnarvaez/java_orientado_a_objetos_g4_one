@@ -3,10 +3,11 @@ package bytebank;
 public class Cuenta {
 	
 	private double saldo;
-	private int agencia;
+	private int agencia = 1;
 	private int numero;
 	private Cliente titular = new Cliente();
-	private static int total = 0;
+	
+	private static int total;
 	
 	public Cuenta() {
 		

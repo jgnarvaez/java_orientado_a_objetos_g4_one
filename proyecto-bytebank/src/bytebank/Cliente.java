@@ -5,7 +5,8 @@ public class Cliente {
 	private String nombre;
     private String documento;
     private String telefono;
-	public String getNombre() {
+	
+    public String getNombre() {
 		return nombre;
 	}
 	public void setNombre(String nombre) {
