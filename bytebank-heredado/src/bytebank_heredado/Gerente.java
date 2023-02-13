@@ -1,3 +1,4 @@
+package bytebank_heredado;
 
 public class Gerente extends Funcionario{
 	
@@ -14,4 +15,7 @@ public class Gerente extends Funcionario{
         return false;
     }
     
+    public double getBonificacion() {
+    	return super.getBonificacion() + super.getSalario();
+    }
 }

@@ -1,3 +1,4 @@
+package bytebank_heredado;
 
 public class TestGerente {
 	
@@ -17,6 +18,7 @@ public class TestGerente {
 
         System.out.println(autentico);
 		
+        System.out.println(g1.getBonificacion());
 	}
 	
 }
