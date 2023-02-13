@@ -4,7 +4,7 @@ public class TestReferencias {
 
 	public static void main(String[] args) {
 		
-		Cuenta primeraCuenta = new Cuenta();
+		Cuenta primeraCuenta = new Cuenta(1,1);
 		// primeraCuenta.saldo = 300;
         primeraCuenta.deposita(300);
 

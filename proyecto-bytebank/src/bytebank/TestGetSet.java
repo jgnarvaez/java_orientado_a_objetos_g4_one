@@ -4,7 +4,7 @@ public class TestGetSet {
 
 	public static void main(String[] args) {
 		
-		Cuenta cuenta = new Cuenta();
+		Cuenta cuenta = new Cuenta(1,1);
 
         cuenta.setNumero(1337);
         System.out.println(cuenta.getNumero());

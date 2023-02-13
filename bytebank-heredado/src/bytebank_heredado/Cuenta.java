@@ -1,4 +1,4 @@
-package bytebank;
+package bytebank_heredado;
 
 public class Cuenta {
 	
@@ -11,11 +11,11 @@ public class Cuenta {
 	
 	public Cuenta(int agencia, int numero){
         Cuenta.total++;
-        System.out.println("Total de cuentas es " + Cuenta.total);
+        //System.out.println("Total de cuentas es " + Cuenta.total);
         this.agencia = agencia;
         this.numero = numero;
-        this.saldo = 100;
-        System.out.println("Estoy creando una cuenta" + this.numero);
+        //this.saldo = 100;
+        System.out.println("Estoy creando una cuenta " + this.numero);
     }
 	
     public void deposita(double valor) {
@@ -32,7 +32,7 @@ public class Cuenta {
 
     public boolean transfiere(double valor, Cuenta destino) {
         if(this.saldo >= valor) {
-            this.saldo -= valor;
+            this.saca(valor);
             destino.deposita(valor);
             return true;
         }

@@ -4,7 +4,7 @@ public class TestCuentaSinCliente {
 
 	public static void main(String[] args) {
 		
-		Cuenta cuentaDeJimena = new Cuenta();
+		Cuenta cuentaDeJimena = new Cuenta(1,2);
         System.out.println(cuentaDeJimena.getSaldo());
 
         // Descomentar esta linea para evitar el NullPointerException

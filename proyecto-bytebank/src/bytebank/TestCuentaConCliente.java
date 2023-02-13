@@ -9,7 +9,7 @@ public class TestCuentaConCliente {
         diego.setDocumento("33442211");
         diego.setTelefono("987654321");
 
-        Cuenta cuentaDeDiego = new Cuenta();
+        Cuenta cuentaDeDiego = new Cuenta(1,1);
         cuentaDeDiego.deposita(100);
         
         // cuentaDeDiego.titular = diego;
