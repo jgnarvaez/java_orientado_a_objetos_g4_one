@@ -1,12 +1,12 @@
 package bytebank_heredado;
 
-public class Gerente extends Funcionario implements Autenticable{
+public class Administrador extends Funcionario implements Autenticable{
 	
-	//sobre-escritura de método
-    public double getBonificacion() {
-    	System.out.println("EJECUTANDO DESDE GERENTE");
-        return 2000;
-    }
+	@Override
+	public double getBonificacion() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 	@Override
 	public boolean iniciarSesion(String clave) {
@@ -19,5 +19,5 @@ public class Gerente extends Funcionario implements Autenticable{
 		// TODO Auto-generated method stub
 		
 	}
-    
+
 }
