@@ -17,7 +17,7 @@ public class Flujo {
 	private static void metodo2( ){
 		System.out.println("Inicio metodo2");
 		
-		for (int i = 1; i <= 5; i++) {
+		/*for (int i = 1; i <= 5; i++) {
 			System.out.println(i);
 			
 			try { // Intenta esto
@@ -37,7 +37,14 @@ public class Flujo {
 				exception.printStackTrace();
 			}
 			
-		}
-		System.out.println("Fin metodo2");
+		}*/
+		
+		//mi propia excepcion
+		
+		Cuenta cuenta = new Cuenta();
+		//throw cuenta; no se puede
+		throw new ArithmeticException("Surgió un error");
+		
+		//System.out.println("Fin metodo2");
 	}
 }
