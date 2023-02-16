@@ -6,11 +6,19 @@ public class CuentaCorriente extends Cuenta {
 		super(agencia, numero);
 	}
 	
+	/*
 	//metodo sobre-escrito de la clase padre
 	@Override
 	public boolean saca(double valor) {
 		double comision = 0.2;
 		return super.saca(valor + comision);
+	}*/
+	
+	//con excepción (refactor)
+	@Override
+	public void saca(double valor) throws SaldoInsuficienteException {
+		double comision = 0.2;
+		super.saca(valor + comision);
 	}
 
 	@Override
