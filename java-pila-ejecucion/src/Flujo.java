@@ -1,4 +1,3 @@
-import java.util.Iterator;
 
 public class Flujo {
 	
@@ -10,7 +9,13 @@ public class Flujo {
 	
 	private static void metodo1() {
 		System.out.println("Inicio metodo1");
-		metodo2();
+		
+		try {
+			metodo2();
+		} catch(MiException me) {
+			me.printStackTrace();
+		}
+		
 		System.out.println("Fin de metodo1");
 	}
 	
@@ -43,7 +48,8 @@ public class Flujo {
 		
 		Cuenta cuenta = new Cuenta();
 		//throw cuenta; no se puede
-		throw new ArithmeticException("Surgió un error");
+		//throw new ArithmeticException("Surgió un error");
+		throw new MiException("Mi excepcion fue lanzada");
 		
 		//System.out.println("Fin metodo2");
 	}
