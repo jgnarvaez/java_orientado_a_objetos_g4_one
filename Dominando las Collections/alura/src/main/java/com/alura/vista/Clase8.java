@@ -24,7 +24,7 @@ public class Clase8 {
             
             //add
             long inicio = System.currentTimeMillis();
-            for (int i = 0; i < 1000000; i++) {
+            for (int i = 0; i < 100000; i++) {
                 lista.add(i);
             }
             long fin = System.currentTimeMillis();
@@ -33,7 +33,7 @@ public class Clase8 {
             
             //get
             inicio = System.currentTimeMillis();
-            for (int i = 0; i < 1000000; i++) {
+            for (int i = 0; i < 100000; i++) {
                 lista.get(i);
             }
             fin = System.currentTimeMillis();
@@ -42,7 +42,7 @@ public class Clase8 {
             
             //remove
             inicio = System.currentTimeMillis();
-            for (int i = 999999; i >= 0; i--) {
+            for (int i = 99999; i >= 0; i--) {
                 lista.remove(i);
             }
             fin = System.currentTimeMillis();
