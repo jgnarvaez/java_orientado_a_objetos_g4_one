@@ -1,5 +1,6 @@
-package br.com.alura;
+package com.alura.vista;
 
+import com.alura.modelo.Curso;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
