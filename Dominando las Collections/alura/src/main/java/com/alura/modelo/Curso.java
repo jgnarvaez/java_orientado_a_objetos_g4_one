@@ -3,10 +3,12 @@ package com.alura.modelo;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -19,6 +21,7 @@ public class Curso {
     private List<Aula> aulaList = new ArrayList<>();
     private Collection<Alumno> alumnos = new HashSet<>();
     //private Collection<Alumno> alumnos = new LinkedHashSet<>();
+    private Map<String, Alumno> alumnoMap = new HashMap<>();
     
     public Curso(String nombre, int tiempo) {
         this.nombre = nombre;
@@ -55,6 +58,10 @@ public class Curso {
         return alumnos;
     }
 
+    public Map<String, Alumno> getAlumnoMap() {
+        return alumnoMap;
+    }
+    
     public void setAulaList(List<Aula> aulaList) {
         this.aulaList = aulaList;
     }
@@ -65,6 +72,7 @@ public class Curso {
     
     public void addAlumno(Alumno alumno) {
         this.alumnos.add(alumno);
+        this.alumnoMap.put(alumno.getCodigo(), alumno);
     }
     
     public boolean verificaAlumno(Alumno alumno) {
