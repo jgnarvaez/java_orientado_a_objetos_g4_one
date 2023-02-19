@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,8 +16,9 @@ public class Curso {
     
     private String nombre;
     private int tiempo;
-    private List<Aula> aulaList = new LinkedList<>();
+    private List<Aula> aulaList = new ArrayList<>();
     private Collection<Alumno> alumnos = new HashSet<>();
+    //private Collection<Alumno> alumnos = new LinkedHashSet<>();
     
     public Curso(String nombre, int tiempo) {
         this.nombre = nombre;
